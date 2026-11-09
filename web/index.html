@@ -49,8 +49,25 @@
 
   <main>
     <section class="hero wrap" aria-labelledby="titulo">
+      <div class="hero-topo">
+        <div class="orbe" aria-hidden="true"><span class="anel"></span><span class="bola"></span></div>
+        <span class="selo-hero">MVP com dados fictícios</span>
+      </div>
       <h1 id="titulo">Quanto custa montar o time em cada consultoria?</h1>
-      <p class="lead">Escolha os cargos e o período. A comparação aparece na hora, com o valor/hora de cada uma das quatro consultorias. Versão MVP com dados fictícios.</p>
+      <p class="lead">Escolha os cargos e o período. A comparação aparece na hora, com o valor/hora de cada uma das quatro consultorias.</p>
+
+      <dl class="numeros" aria-label="Resumo do simulador">
+        <div><dt>Consultorias</dt><dd>4</dd></div>
+        <div><dt>Modelos de squad</dt><dd>3</dd></div>
+        <div><dt>Cálculo</dt><dd>100% código</dd></div>
+      </dl>
+
+      <nav class="atalhos-hero" aria-label="Ir para uma seção">
+        <a class="chip" href="#simulador">Simular agora</a>
+        <a class="chip" href="#formatos">Comparar modelos</a>
+        <a class="chip" href="#como">Como funciona</a>
+        <a class="chip" href="#rota">O que vem depois</a>
+      </nav>
 
       <div class="simulador" id="simulador">
         <form class="painel entrada" id="form" onsubmit="return false" aria-label="Pedido de squad">
